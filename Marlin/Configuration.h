@@ -205,9 +205,11 @@
 #endif
 #ifdef J_DRIVER_TYPE
   #define AXIS5_NAME 'B' // :['B', 'C', 'U', 'V', 'W']
+  #define AXIS5_ROTATES
 #endif
 #ifdef K_DRIVER_TYPE
   #define AXIS6_NAME 'C' // :['C', 'U', 'V', 'W']
+  #define AXIS6_ROTATES					   
 #endif
 #ifdef U_DRIVER_TYPE
   #define AXIS7_NAME 'U' // :['U', 'V', 'W']
@@ -2134,7 +2136,7 @@
   #define XY_SIDE_AD 200
 
   // Or, set the XY skew factor directly:
-  //#define XY_SKEW_FACTOR 0.0
+  #define XY_SKEW_FACTOR 0.0
 
   //#define SKEW_CORRECTION_FOR_Z
   #if ENABLED(SKEW_CORRECTION_FOR_Z)
@@ -2145,8 +2147,8 @@
     #define YZ_SIDE_AD 200
 
     // Or, set the Z skew factors directly:
-    //#define XZ_SKEW_FACTOR 0.0
-    //#define YZ_SKEW_FACTOR 0.0
+    #define XZ_SKEW_FACTOR 0.0
+    #define YZ_SKEW_FACTOR 0.0
   #endif
 
   // Enable this option for M852 to set skew at runtime
